@@ -20,7 +20,7 @@
             {{ item }}: {{ character[item]?.name || character[item] }}
           </div>
           <div class="character-cart__content-item character-cart__episodes">
-            episodes: {{ character.episode.length }}
+            episodes count: {{ character.episode.length }}
           </div>
         </div>
       </div>
