@@ -1,0 +1,40 @@
+@use './base.scss';
+@use './mixins.scss' as *;
+
+.container {
+  max-width: 1430px;
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: inherit;
+}
+
+.content {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.p-toast {
+  max-width: calc(100% - 40px);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@include mobile-max {
+  .container {
+    padding: 0 15px;
+  }
+
+  .content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
